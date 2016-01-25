@@ -1,0 +1,83 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul, ol, li, a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1180px;
+  }
+}
+
+.addMarginTop {
+  margin-top: 20px;
+}
+
+.container .carousel-wrapper, .carousel-wrapper .carousel-block {
+  position: relative;
+  overflow: hidden;
+  height: 81px;
+}
+@media (min-width: 1260px) {
+  .container .carousel-wrapper, .carousel-wrapper .carousel-block {
+    height: 98px;
+  }
+}
+
+.carousel-wrapper .carousel-list {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transition: top .4s ease-in-out;
+}
+
+.carousel-wrapper .carousel-block img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.carousel-wrapper .carousel-pager {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  margin: 0;
+}
+.carousel-pager .page-num {
+  display: inline-block;
+  width: 15px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #999;
+  font-size: 12px;
+  padding: 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.carousel-pager .page-num.active {
+  background-color: #f60;
+  background-color: rgba(255, 102, 0, 0.8);
+  color: #fff;
+  font-weight: 700;
+}
